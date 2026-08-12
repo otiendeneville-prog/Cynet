@@ -1,5 +1,5 @@
 import { queryOptions } from "@tanstack/react-query";
-import { getCourses, getPrograms, getServices } from "./catalog.functions";
+import { getCourses, getPrograms, getServices } from "./catalog-functions";
 
 export const coursesQuery = (input: { featuredOnly?: boolean; category?: string } = {}) =>
   queryOptions({
