@@ -19,7 +19,7 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <span className="grid size-10 place-items-center rounded-full bg-brand-gradient font-display text-lg font-bold text-on-brand">
-            C
+            <img src="" alt="Logo" />
           </span>
           <span className="leading-tight">
             <span className="block font-display text-sm font-bold tracking-tight text-primary uppercase">
