@@ -24,7 +24,10 @@ export function SiteHeader() {
           </span>
           <span className="leading-tight">
             <span className=" mt-5 block font-display text-sm font-bold tracking-tight text-primary uppercase">
-              Cynet East Africa
+              Cynet East Africa 
+            </span>
+            <span className="font-display text-sm font-bold tracking-tight text-primary uppercase">
+              Consultancy
             </span>
             <span className="block text-[11px] text-muted-foreground">{SITE.tagline}</span>
           </span>
