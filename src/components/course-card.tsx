@@ -4,6 +4,12 @@ import type { Course } from "@/lib/site-data";
 export function CourseCard({ course }: { course: Course }) {
   return (
     <article className="group flex h-full flex-col rounded-2xl border border-border bg-card p-6 shadow-elevate transition-transform hover:-translate-y-1">
+       {course.image ?(
+      <img src={course.image} 
+      alt={course.title} 
+     className="mb-4 h-40 w-full rounded-xl object-cover"
+      />
+    ):null}
       <div className="flex items-center justify-between gap-3">
         <span className="rounded-full bg-secondary px-3 py-1 text-[11px] font-semibold tracking-wide text-secondary-foreground uppercase">
           {course.category}

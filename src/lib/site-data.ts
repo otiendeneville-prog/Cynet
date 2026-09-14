@@ -7,6 +7,8 @@ export type Course = {
   instructor: string;
   category: string;
   featured?: boolean;
+  image?:string,
+
 };
 
 export type Program = {
@@ -69,6 +71,8 @@ export const COURSES: Course[] = [
     instructor: "Certified Trainer",
     category: "Agriculture, Climate Change & Environment",
     featured: true,
+    image: "https://cyneteastafrica.com/wp-content/uploads/2026/03/upcoming-course-esg-300x188.jpeg",
+
   },
   {
     slug: "zero-based-budgeting",
@@ -79,6 +83,8 @@ export const COURSES: Course[] = [
     instructor: "Certified Practitioner",
     category: "Accounting & Finance",
     featured: true,
+    image: "https://cyneteastafrica.com/wp-content/uploads/2023/12/high-angle-woman-working-as-economist-e1761560266817-300x146.jpg",
+
   },
   {
     slug: "public-sector-process-improvement",
@@ -89,6 +95,8 @@ export const COURSES: Course[] = [
     instructor: "Certified Practitioner",
     category: "Lean Six Sigma & Strategy",
     featured: true,
+    image: "https://cyneteastafrica.com/wp-content/uploads/2026/02/public-sector-training-300x150.jpg",
+
   },
   {
     slug: "monitoring-evaluation-fundamentals",
