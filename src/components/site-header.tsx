@@ -23,7 +23,7 @@ export function SiteHeader() {
             <img className="bg-white w-full h-full" src={cynetLogo} alt="Logo" />
           </span>
           <span className="leading-tight">
-            <span className="block font-display text-sm font-bold tracking-tight text-primary uppercase">
+            <span className=" mt-5 block font-display text-sm font-bold tracking-tight text-primary uppercase">
               Cynet East Africa
             </span>
             <span className="block text-[11px] text-muted-foreground">{SITE.tagline}</span>
