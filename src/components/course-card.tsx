@@ -7,13 +7,13 @@ export function CourseCard({ course }: { course: Course }) {
        {course.image ?(
       <img src={course.image} 
       alt={course.title} 
-     className="mb-4 h-40 w-full rounded-xl object-cover"
+     className="mb-4 h-50 w-full rounded-xl object-cover"
       />
     ):null}
       <div className="flex items-center justify-between gap-3">
-        <span className="rounded-full bg-secondary px-3 py-1 text-[11px] font-semibold tracking-wide text-secondary-foreground uppercase">
+        {/* <span className="rounded-full bg-secondary px-3 py-1 text-[11px] font-semibold tracking-wide text-secondary-foreground uppercase">
           {course.category}
-        </span>
+        </span> */}
         {course.featured ? (
           <span className="rounded-full bg-accent px-3 py-1 text-[11px] font-bold text-accent-foreground uppercase">
             Featured

@@ -20,7 +20,7 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <span className="grid size-20 place-items-center  font-display text-lg font-bold text-on-brand">
-            <img className="w-full h-full" src={cynetLogo} alt="Logo" />
+            <img className="w-20 " src={cynetLogo} alt="Logo" />
           </span>
           <span className="leading-tight">
             <span className=" mt-5 block font-display text-sm font-bold tracking-tight text-primary uppercase">
