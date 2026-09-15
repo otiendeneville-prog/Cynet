@@ -15,6 +15,7 @@ export type Program = {
   title: string
   blurb: string
   courses: string[]
+  image?: string
 }
 
 export type Service = {
@@ -114,7 +115,7 @@ export const COURSES: Course[] = [
     location: 'Nairobi, Kenya',
     instructor: 'Lead M&E Specialist',
     category: 'Monitoring & Evaluation',
-    image: 'https://cyneteastafrica.com/wp-content/uploads/2023/09/10.png',
+    image: 'https://cyneteastafrica.com/wp-content/uploads/2023/09/5.png',
   },
   {
     slug: 'project-management-professional',
@@ -124,8 +125,6 @@ export const COURSES: Course[] = [
     location: 'Nairobi, Kenya',
     instructor: 'PMP Certified Trainer',
     category: 'Project Management',
-    image:
-      'image://https://cyneteastafrica.com/wp-content/uploads/2023/09/11.png',
   },
   {
     slug: 'mobile-data-collection',
@@ -153,6 +152,7 @@ export const COURSES: Course[] = [
     location: 'Nairobi, Kenya',
     instructor: 'Protection Specialist',
     category: 'Child Protection',
+    image: 'https://cyneteastafrica.com/wp-content/uploads/2023/09/8.png',
   },
   {
     slug: 'hr-analytics',
@@ -162,6 +162,7 @@ export const COURSES: Course[] = [
     location: 'Nairobi, Kenya',
     instructor: 'HR Practitioner',
     category: 'Human Resources',
+    image: 'https://cyneteastafrica.com/wp-content/uploads/2023/09/5.png',
   },
   {
     slug: 'humanitarian-logistics',
@@ -171,6 +172,7 @@ export const COURSES: Course[] = [
     location: 'Nairobi, Kenya',
     instructor: 'Humanitarian Practitioner',
     category: 'Humanitarian',
+    image: 'https://cyneteastafrica.com/wp-content/uploads/2023/09/5.png',
   },
 ]
 
@@ -186,6 +188,7 @@ export const PROGRAMS: Program[] = [
       'Risk & Procurement',
       'Grants Management',
     ],
+    image: 'https://cyneteastafrica.com/wp-content/uploads/2023/09/10.png',
   },
   {
     slug: 'lean-six-sigma-and-strategy',
@@ -198,6 +201,7 @@ export const PROGRAMS: Program[] = [
       'Strategic Planning',
       'Process Improvement',
     ],
+    image: 'https://cyneteastafrica.com/wp-content/uploads/2023/09/11.png',
   },
   {
     slug: 'agriculture-climate-and-environment',
@@ -209,6 +213,7 @@ export const PROGRAMS: Program[] = [
       'Value Chain Analysis',
       'Food Security',
     ],
+    image: 'https://cyneteastafrica.com/wp-content/uploads/2023/09/4.png',
   },
   {
     slug: 'governance-and-leadership',
@@ -220,6 +225,7 @@ export const PROGRAMS: Program[] = [
       'Ethics & Integrity',
       'Public Policy',
     ],
+    image: 'https://cyneteastafrica.com/wp-content/uploads/2023/09/7.png',
   },
   {
     slug: 'accounting-and-finance',
@@ -231,6 +237,7 @@ export const PROGRAMS: Program[] = [
       'Internal Audit',
       'Financial Modelling',
     ],
+    image: 'https://cyneteastafrica.com/wp-content/uploads/2023/09/8.png',
   },
   {
     slug: 'ict-and-data',
@@ -242,6 +249,7 @@ export const PROGRAMS: Program[] = [
       'Data Analysis with R',
       'GIS Mapping',
     ],
+    image: 'https://cyneteastafrica.com/wp-content/uploads/2023/09/5.png',
   },
   {
     slug: 'monitoring-and-evaluation',
@@ -253,6 +261,7 @@ export const PROGRAMS: Program[] = [
       'Theory of Change',
       'Data Quality Audits',
     ],
+    image: 'https://cyneteastafrica.com/wp-content/uploads/2023/09/5.png',
   },
   {
     slug: 'human-resources',
