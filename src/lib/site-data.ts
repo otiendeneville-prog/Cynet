@@ -125,6 +125,7 @@ export const COURSES: Course[] = [
     location: 'Nairobi, Kenya',
     instructor: 'PMP Certified Trainer',
     category: 'Project Management',
+    image: 'https://cyneteastafrica.com/wp-content/uploads/2023/09/5.png',
   },
   {
     slug: 'mobile-data-collection',
@@ -134,6 +135,7 @@ export const COURSES: Course[] = [
     location: 'Kisumu, Kenya',
     instructor: 'Data Systems Specialist',
     category: 'ICT & Data',
+    image: 'https://cyneteastafrica.com/wp-content/uploads/2023/09/4.png',
   },
   {
     slug: 'corporate-governance',
@@ -143,6 +145,7 @@ export const COURSES: Course[] = [
     location: 'Mombasa, Kenya',
     instructor: 'Governance Advisor',
     category: 'Governance & Leadership',
+    image: 'https://cyneteastafrica.com/wp-content/uploads/2023/09/8.png',
   },
   {
     slug: 'child-online-protection',
