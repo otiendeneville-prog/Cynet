@@ -8,7 +8,7 @@ type MenuLink= {
 }
 
 function MegaMenu({lable,links}:{label:string:links:MenuLink[]}){
-    const[]
+    const[open, setOpen] = useState('false')
 
 }
 
