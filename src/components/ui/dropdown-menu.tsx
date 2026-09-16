@@ -1,14 +1,19 @@
 import { hash } from 'crypto'
-import { Link } from 'lucide-react'
+import { Link } from '@tanstack/react-router'
 import { Label } from 'radix-ui'
 
-type Props = {
+type MenuLink = {
   label: string
   to: string
-  hash?: string
+  harsh?: string
 }
 
-export function MegaMenu({ label }: Props) {
+type Props = {
+  label: string;
+  links: MenuLinks[],;
+}
+
+export function MegaMenu({ label: }: Props) {
   return (
     <div className="flex flex-col">
       <label className="font-bold mb-5">{label}</label>
