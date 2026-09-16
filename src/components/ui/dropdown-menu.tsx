@@ -1,5 +1,7 @@
+import { link } from "fs";
 import { Link } from "lucide-react";
 import { Label } from "radix-ui";
+
 type MenuLink= {
    label:string;
    to:string;
@@ -11,6 +13,7 @@ function MegaMenu({lable,links}:{label:string:links:MenuLink[]}){
      <Link 
        key={lable.links}
        to={Link.to}
+       hash={hash.link}
      
      >
          
