@@ -5,7 +5,7 @@ import { Label } from "radix-ui";
 type MenuLink= {
    label:string;
    to:string;
-   harsh ?:string;
+   hash ?:string;
 }
 
 function MegaMenu({lable,links}:{label:string:links:MenuLink[]}){
