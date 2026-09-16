@@ -8,10 +8,10 @@ type MenuLink= {
    hash ?:string;
 }
 
-function MegaMenu({lable,links}:{label:string:links:MenuLink[]}){
+function MegaMenu({ label,links}:{label:string:links:MenuLink[]}){
 <div className="flex flex-col">
      <Link 
-       key={lable.links}
+       key={label.links}
        to={Link.to}
        hash={hash.link}
      
