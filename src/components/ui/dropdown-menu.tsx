@@ -1,7 +1,3 @@
-import React from 'react'
-
-export default function dropdown-menu() {
-  return (
-    <div>dropdown-menu</div>
-  )
+export default function dropdown() {
+  return <div>dropdown-menu</div>
 }
