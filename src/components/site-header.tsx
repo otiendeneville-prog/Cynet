@@ -1,35 +1,41 @@
-import { Link } from "@tanstack/react-router";
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import { SITE } from "@/lib/site-data";
-import cynetLogo from "../assets/cynet_east_africa_icon_only (2).png";
+import { Link } from '@tanstack/react-router'
+import { useState } from 'react'
+import { Menu, X } from 'lucide-react'
+import { SITE } from '@/lib/site-data'
+import cynetLogo from '../assets/cynet_east_africa_icon_only (2).png'
 
 const NAV = [
-  { to: "/", label: "Home" },
-  { to: "/training-programs", label: "Training Programs" },
-  { to: "/training-calendar", label: "Training Calendar" },
-  { to: "/about", label: "About Us" },
-  { to: "/contact", label: "Contact Us" },
-] as const;
+  { to: '/', label: 'Home' },
+  { to: '/training-programs', label: 'Training Programs' },
+  { to: '/training-calendar', label: 'Training Calendar' },
+  { to: '/about', label: 'About Us' },
+  { to: '/contact', label: 'Contact Us' },
+] as const
 
 export function SiteHeader() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3">
-        <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+        <Link
+          to="/"
+          className="flex items-center gap-3"
+          onClick={() => setOpen(false)}
+        >
           <span className="grid size-20 place-items-center  font-display text-lg font-bold text-on-brand">
             <img className="w-20 " src={cynetLogo} alt="Logo" />
           </span>
           <span className="leading-tight">
             <span className=" mt-5 block font-display text-sm font-bold tracking-tight text-primary uppercase">
-              Cynet East Africa 
+              Cynet East Africa
             </span>
             <span className="font-display text-sm font-bold tracking-tight text-primary uppercase">
               Consultancy
             </span>
-            <span className="block text-[11px] text-muted-foreground">{SITE.tagline}</span>
+            <span className="block text-[11px] text-muted-foreground">
+              {SITE.tagline}
+            </span>
           </span>
         </Link>
 
@@ -38,8 +44,8 @@ export function SiteHeader() {
             <Link
               key={item.to}
               to={item.to}
-              activeOptions={{ exact: item.to === "/" }}
-              activeProps={{ className: "bg-secondary text-primary" }}
+              activeOptions={{ exact: item.to === '/' }}
+              activeProps={{ className: 'bg-secondary text-primary' }}
               className="rounded-full px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
             >
               {item.label}
@@ -81,5 +87,5 @@ export function SiteHeader() {
         </nav>
       ) : null}
     </header>
-  );
+  )
 }
