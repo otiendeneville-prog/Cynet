@@ -1,6 +1,9 @@
+// src/components/ui/DropdownMenu.tsx
+
 import { Link } from '@tanstack/react-router'
 import { useEffect, useRef, useState } from 'react'
 import { ChevronDown } from 'lucide-react'
+import { PROGRAMS } from '@/lib/site-data'
 
 type MenuLink = {
   label: string
@@ -73,4 +76,26 @@ export function MegaMenu({ label, links }: Props) {
       ) : null}
     </div>
   )
+}
+
+export function ProgramsDropdown() {
+  const links: MenuLink[] = PROGRAMS.map((program) => ({
+    label: program.title,
+    to: '/training-programs',
+    hash: program.slug,
+  }))
+
+  return <MegaMenu label="Training Programs" links={links} />
+}
+
+export function AboutDropdown() {
+  const links: MenuLink[] = [
+    { label: 'About Cynet', to: '/about' },
+    { label: 'Our Clients', to: '/about', hash: 'clients' },
+    { label: 'Our Team', to: '/about', hash: 'team' },
+    { label: 'Portfolio', to: '/about', hash: 'portfolio' },
+    { label: 'Team Building', to: '/about', hash: 'team-building' },
+  ]
+
+  return <MegaMenu label="About Us" links={links} />
 }
