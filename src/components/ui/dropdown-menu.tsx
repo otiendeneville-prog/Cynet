@@ -8,7 +8,15 @@ type MenuLink= {
 }
 
 function MegaMenu({lable,links}:{label:string:links:MenuLink[]}){
-    const[open, setOpen] = useState('false')
-
+<div className="flex flex-col">
+     <Link 
+       key={lable.links}
+       to={Link.to}
+     
+     >
+         
+     
+     </Link>
+</div>
 }
 
