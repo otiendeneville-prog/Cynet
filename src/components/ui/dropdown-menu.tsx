@@ -1,4 +1,5 @@
 import { Link } from "lucide-react";
+import {useState} from "react"
 
 type MenuLink= {
    label:string;
@@ -7,6 +8,7 @@ type MenuLink= {
 }
 
 function MegaMenu({lable,links}:{label:string:links:MenuLink[]}){
+    const[]
 
 }
 
