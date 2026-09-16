@@ -1,5 +1,5 @@
 import { Link } from 'lucide-react'
-
+import { Label } from 'radix-ui'
 type MenuLink = {
   label: string
   to: string
