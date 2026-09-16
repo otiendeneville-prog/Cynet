@@ -1,31 +1,35 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { useSuspenseQuery } from "@tanstack/react-query";
-import { programsQuery } from "@/lib/catalog-queries";
+import { createFileRoute } from '@tanstack/react-router'
+import { useSuspenseQuery } from '@tanstack/react-query'
+import { programsQuery } from '@/lib/catalog-queries'
 
-export const Route = createFileRoute("/training-programs")({
+export const Route = createFileRoute('/training-programs')({
   head: () => ({
     meta: [
-      { title: "Training Programs | Cynet East Africa Consultancy" },
+      { title: 'Training Programs | Cynet East Africa Consultancy' },
       {
-        name: "description",
+        name: 'description',
         content:
-          "Explore Cynet East Africa training categories: project management, M&E, finance, governance, ICT, HR, humanitarian and child protection courses.",
+          'Explore Cynet East Africa training categories: project management, M&E, finance, governance, ICT, HR, humanitarian and child protection courses.',
       },
-      { property: "og:title", content: "Training Programs | Cynet East Africa" },
       {
-        property: "og:description",
-        content: "Ten professional training categories delivered across East Africa.",
+        property: 'og:title',
+        content: 'Training Programs | Cynet East Africa',
+      },
+      {
+        property: 'og:description',
+        content:
+          'Ten professional training categories delivered across East Africa.',
       },
     ],
   }),
   loader: ({ context }) => {
-    context.queryClient.ensureQueryData(programsQuery());
+    context.queryClient.ensureQueryData(programsQuery())
   },
   component: ProgramsPage,
-});
+})
 
 function ProgramsPage() {
-  const { data: programs } = useSuspenseQuery(programsQuery());
+  const { data: programs } = useSuspenseQuery(programsQuery())
 
   return (
     <div>
@@ -38,8 +42,9 @@ function ProgramsPage() {
             Training categories built for real institutional performance
           </h1>
           <p className="mt-5 max-w-2xl text-lg opacity-90">
-            Every program is practitioner-led, contextualised for East Africa and delivered in
-            Nairobi, Mombasa, Kisumu or in-house at your organization.
+            Every program is practitioner-led, contextualised for East Africa
+            and delivered in Nairobi, Mombasa, Kisumu or in-house at your
+            organization.
           </p>
         </div>
       </section>
@@ -51,8 +56,19 @@ function ProgramsPage() {
               key={program.slug}
               className="flex h-full flex-col rounded-2xl border border-border bg-card p-6 shadow-elevate transition-transform hover:-translate-y-1"
             >
-              <h2 className="text-lg font-semibold text-foreground">{program.title}</h2>
-              <p className="mt-2 text-sm text-muted-foreground">{program.blurb}</p>
+              {program.image ? (
+                <img
+                  src={program.image}
+                  alt={program.title}
+                  className="mb-4 h-48 w-full rounded-xl object-cover"
+                />
+              ) : null}
+              <h2 className="text-lg font-semibold text-foreground">
+                {program.title}
+              </h2>
+              <p className="mt-2 text-sm text-muted-foreground">
+                {program.blurb}
+              </p>
               <ul className="mt-5 flex flex-wrap gap-2">
                 {program.courses.map((course) => (
                   <li
@@ -68,5 +84,5 @@ function ProgramsPage() {
         </div>
       </section>
     </div>
-  );
+  )
 }
