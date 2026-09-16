@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { SITE } from '@/lib/site-data'
 import cynetLogo from '../assets/cynet_east_africa_icon_only (2).png'
+import { ProgramsDropdown, AboutDropdown } from '@/components/ui/DropdownMenu'
 
 const NAV = [
   { to: '/', label: 'Home' },
