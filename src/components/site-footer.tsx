@@ -53,6 +53,16 @@ export function SiteFooter() {
                 Contact Us
               </Link>
             </li>
+            <li>
+              <Link to="/our-clients" className="opacity-85 hover:opacity-100">
+                Our Clients
+              </Link>
+            </li>
+            <li>
+              <Link to="/portfolio" className="opacity-85 hover:opacity-100">
+                Portfolio
+              </Link>
+            </li>
           </ul>
         </div>
 
