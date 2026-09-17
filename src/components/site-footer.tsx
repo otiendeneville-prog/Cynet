@@ -1,16 +1,16 @@
-import { Link } from "@tanstack/react-router";
-import { Mail, MapPin } from "lucide-react";
-import { SITE } from "@/lib/site-data";
+import { Link } from '@tanstack/react-router'
+import { Mail, MapPin } from 'lucide-react'
+import { SITE } from '@/lib/site-data'
 
 export function SiteFooter() {
   return (
-    <footer className="bg-brand-gradient text-on-brand">
+    <footer className="bg-[#1a1a03] text-on-brand">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 md:grid-cols-4">
         <div className="md:col-span-2">
           <h3 className="font-display text-2xl font-bold">{SITE.name}</h3>
           <p className="mt-3 max-w-md text-sm opacity-85">
-            High-impact training, research and consultancy for individuals and organizations across
-            East Africa.
+            High-impact training, research and consultancy for individuals and
+            organizations across East Africa.
           </p>
           <div className="mt-5 space-y-2 text-sm opacity-90">
             <p className="flex items-center gap-2">
@@ -23,15 +23,23 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold tracking-wide uppercase opacity-80">Explore</h4>
+          <h4 className="text-sm font-semibold tracking-wide uppercase opacity-80">
+            QUICK LINKS
+          </h4>
           <ul className="mt-4 space-y-2 text-sm">
             <li>
-              <Link to="/training-programs" className="opacity-85 hover:opacity-100">
+              <Link
+                to="/training-programs"
+                className="opacity-85 hover:opacity-100"
+              >
                 Training Programs
               </Link>
             </li>
             <li>
-              <Link to="/training-calendar" className="opacity-85 hover:opacity-100">
+              <Link
+                to="/training-calendar"
+                className="opacity-85 hover:opacity-100"
+              >
                 Training Calendar
               </Link>
             </li>
@@ -49,7 +57,9 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold tracking-wide uppercase opacity-80">Follow</h4>
+          <h4 className="text-sm font-semibold tracking-wide uppercase opacity-80">
+            Follow
+          </h4>
           <ul className="mt-4 space-y-2 text-sm">
             {SITE.socials.map((s) => (
               <li key={s.label}>
@@ -72,5 +82,5 @@ export function SiteFooter() {
         </p>
       </div>
     </footer>
-  );
+  )
 }
