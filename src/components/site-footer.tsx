@@ -19,6 +19,9 @@ export function SiteFooter() {
             <p className="flex items-center gap-2">
               <Mail className="size-4" /> {SITE.email}
             </p>
+            <button className="px-4 py-2 bg-[#1a1a03] rounded-[6px] text-[12px] font-bold border-2 border-[#333333] text-[#00A3D3] uppercase tracking-[0.5px]">
+              NITA APPROVED
+            </button>
           </div>
         </div>
 
