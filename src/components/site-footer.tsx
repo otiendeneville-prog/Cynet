@@ -1,13 +1,6 @@
 import { Link } from '@tanstack/react-router'
 import { Mail, MapPin } from 'lucide-react'
 import { SITE } from '@/lib/site-data'
-import { SiFacebook, SiX, SiYoutube } from '@icons-pack/react-simple-icons'
-const socialLinks = [
-  { name: 'Facebook', href: 'https://facebook.com', icon: SiFacebook },
-  { name: 'X / Twitter', href: 'https://x.com', icon: SiX },
-  // { name: 'LinkedIn', href: 'https://linkedin.com', icon: SiLinkedin },
-  { name: 'YouTube', href: 'https://youtube.com', icon: SiYoutube },
-]
 
 export function SiteFooter() {
   return (
@@ -26,24 +19,6 @@ export function SiteFooter() {
             <p className="flex items-center gap-2">
               <Mail className="size-4" /> {SITE.email}
             </p>
-            <button className="px-4 py-2 bg-[#1a1a03] rounded-[6px] text-[12px] font-bold border-2 border-[#333333] text-[#00A3D3] uppercase tracking-[0.5px]">
-              NITA APPROVED
-            </button>
-            <button className="px-4 py-2 ml-4 bg-[#1a1a03] rounded-[6px] text-[12px] font-bold border-2 border-[#333333] text-[#00A3D3] uppercase tracking-[0.5px]">
-              Q&A PROCESSES
-            </button>
-            {socialLinks.map(({ name, href, icon: Icon }) => (
-              <Link
-                key={name}
-                to={href}
-                preload="intent"
-                aria-label={name}
-                className="text-gray-400  justify-between transition-all duration-200 hover:text-[#8cc313] hover:scale-110"
-                activeProps={{ className: 'text-[#00A3D3]' }}
-              >
-                <Icon size={22} strokeWidth={2} />
-              </Link>
-            ))}
           </div>
         </div>
 
